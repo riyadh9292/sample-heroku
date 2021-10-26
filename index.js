@@ -64,6 +64,21 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("running ginus server");
 });
+app.get("/hello", async (req, res) => {
+  res.send("hola kuku");
+});
 app.listen(port, () => {
   console.log("listing on port: ", port);
 });
+/* one time */
+// 1. heroku account open
+// 2. software install
+// 3. git init
+// 4. git ignore(node_modules,.env)
+// 5. push everything to git
+// 6. make sure start script in package.json
+// 7. process.env.PORT || 5000;
+// 8. heroku login
+// 9. heroku create for each project one time
+// 10. git push heroku main
+// 11. git add. git commit -m "something"
